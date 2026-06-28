@@ -20,4 +20,5 @@ jobs:
           echo "Job Status: ${{ job.status }}"
 
       - name: Retrieve Variable
-        run: echo "${{ MY_VAR}}"
+        run: |
+          echo "${{ vars.MY_VAR }}"
